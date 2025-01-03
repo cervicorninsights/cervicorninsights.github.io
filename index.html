@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogging Website</title>
+    <title>Cervicorn Insights</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Cervicorn Insights</h1>
     </header>
-    <main id="content">
-        <!-- Blog posts will be loaded here -->
+    <main>
+        <form id="postForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="content" placeholder="Content" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div id="posts"></div>
     </main>
     <script src="main.js"></script>
 </body>
